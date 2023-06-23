@@ -70,7 +70,7 @@ summarylength = 25
     heading               = "We’re a Design Studio That Belies In the Great Ideas"
     tagline               = "WE WORK HARD, WE PLAY HARD"
     primary_button        = "Submit Query"
-    primary_button_url    = "portfolio"
+    primary_button_url    = "contact"
     secondary_button      = "Connect with Us"
     secondary_button_url  = "contact"
 
