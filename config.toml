@@ -1,4 +1,4 @@
-baseURL       = "http://example.org/"
+baseURL       = "https://codin.work/"
 languageCode  = "en-us"
 title         = "C.W | Software Development"
 theme         = "roxo-hugo"
