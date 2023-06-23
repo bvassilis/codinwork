@@ -36,7 +36,7 @@ summarylength = 25
   description = "C.W Hugo themes | Design Agency Template by StaticMania"
   author = "StaticMania"
   # Google Analitycs
-  googleAnalitycsID = "Your ID"
+  googleAnalitycsID = "G-E17HNNZ0ET"
   # We're using formspree.io for form handling, paste your formspree url below
   fabform  = "https://fabform.io/f/USAg2Jl"
 
