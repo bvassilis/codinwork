@@ -34,7 +34,7 @@ summarylength = 25
   # Google Analitycs
   googleAnalitycsID = "G-E17HNNZ0ET"
   # We're using formspree.io for form handling, paste your formspree url below
-  fabform  = "https://fabform.io/f/USAg2Jl"
+  fabform  = "https://fabform.io/f/ClqSBdW"
 
   # Contact Form
   [params.contactForm]
@@ -81,14 +81,14 @@ summarylength = 25
     title               = "LET’S WORK TOGETHER"
     primary_button      = "Submit Query"
     primary_button_url  = "contact"
-    secondary_button    = "Not Convinced"
+    secondary_button    = "Connect with Us"
     secondary_button_url = "portfolio"
 
   [params.footer]
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "18 Rue de Contern<br>Moutfort, LU-5339"
+      address = "18 Rue de Contern<br>Luxembourg, LU-5339"
       phone   = "+352671013328"
       email   = "info@codin.work"
       # Footer Sitemap
