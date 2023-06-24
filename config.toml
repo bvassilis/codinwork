@@ -62,7 +62,7 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/Untitled8.webp"
+    background_image      = "images/backgrounds/hero.webp"
     heading               = "Software Development Services"
     tagline               = "WE WORK HARD, WE PLAY HARD"
     primary_button        = "Submit Query"
