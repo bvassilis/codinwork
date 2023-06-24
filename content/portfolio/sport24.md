@@ -2,7 +2,7 @@
 title: "SPORT24"
 date: 2023-05-23T20:56:42+06:00
 type: portfolio
-image: "images/projects/sport24.jpeg"
+image: "images/projects/sport24.webp"
 category: ["WEBSITE, MOBILE WEB"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---

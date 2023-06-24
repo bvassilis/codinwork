@@ -1,8 +1,8 @@
 ---
 title: "CONTRA"
-date: 2019-12-23T15:55:44+06:00
+date: 2023-05-23T15:55:44+06:00
 type: portfolio
-image: "images/projects/contra.jpg"
+image: "images/projects/contra.webp"
 category: ["WEBSITE, MOBILE WEB"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---

@@ -1,8 +1,8 @@
 ---
-title: "TV PROGRAM"
-date: 2019-12-23T15:58:10+06:00
+title: "24Media"
+date: 2021-12-23T15:58:10+06:00
 type: portfolio
-image: "images/projects/tvprogram.jpg"
+image: "images/projects/24media.webp"
 category: ["WEBSITE, MOBILE WEB"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---

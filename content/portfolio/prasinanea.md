@@ -1,8 +1,8 @@
 ---
 title: "PRASINANEA"
-date: 2021-12-23T15:56:43+06:00
+date: 2019-12-23T15:56:43+06:00
 type: portfolio
-image: "images/projects/prasinanea.jpg"
+image: "images/projects/prasinanea.webp"
 category: ["WEBSITE, MOBILE WEB"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---
