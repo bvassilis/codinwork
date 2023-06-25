@@ -1,6 +1,6 @@
 baseURL       = "https://codin.work/"
 languageCode  = "en-us"
-title         = "C.W | Software Development"
+title         = "Codin.Work | IT Consultancy and Development Services"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -89,7 +89,7 @@ summarylength = 25
     [params.footer.contactInfo]
       title   = "Contact Info"
       address = "18 Rue de Contern<br>Luxembourg, LU-5339"
-      phone   = "+352671013328"
+      phone   = "+352 671 013 328"
       email   = "contact@codin.work"
       # Footer Sitemap
       [params.footer.sitemap]
