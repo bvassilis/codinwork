@@ -88,6 +88,50 @@
   </div>
 </nav>
 <main>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+  crossorigin="anonymous"></script>
+<script>
+   
+function onSubmit(token) {
+    var _form = $('form[name=contact]');
+    var data = _form.serialize();
+    var url = 'https://us-central1-solid-outlook-270109.cloudfunctions.net/contactSubmit'; 
+    var btn = _form.find('button[type=submit]');
+    btn.text('Sending...');
+    $('#contact-success').addClass('d-none');
+    $('#contact-danger').addClass('d-none');
+
+    $.ajax({
+        url: url,
+        type: _form.attr('method'),
+        dataType: 'json',
+        data: data,
+        success: function (response) {
+            btn.text('SUBMIT');
+            if (response.success) {
+
+                _form.trigger('reset');
+                $('#contact-success').removeClass('d-none');
+
+                return false;
+            } else {
+
+                $('#contact-danger').removeClass('d-none');
+            }
+            return false;
+        },
+        error: function (err) {
+            btn.text('SUBMIT');
+            console.log(err);
+            $('#contact-danger').removeClass('d-none');
+            return false;
+        }
+    });
+};
+</script>
 <section class="site-contact">
   <div class="container">
     <div class="row">
@@ -99,23 +143,36 @@
       <div class="col-lg-6 ml-auto">
         <div class="site-contact-form">
           <h4>TELL US ABOUT YOUR PROJECT</h4>
-          <form id="contact-form" action="https://fabform.io/f/ClqSBdW" method="post">
+          <form name="contact" method="POST" id="contact-form">
             <div class="row">
+
+              <div class="col-12">
+                <div class="alert alert-success mt-4 d-none" id="contact-success" role="alert">
+                  <h4 class="alert-heading">Your message well received!</h4>
+                  <p>Our team will come back to you as soon as possible.</p>
+                </div>
+                <div class="alert alert-danger mt-4 d-none" id="contact-danger" role="alert">
+                  <h4 class="alert-heading">Your message failed to send.</h4>
+                  <p>Please try again later.</p>
+                </div>
+              </div>
+
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="first-name" id="first-name" placeholder="First Name" required>
+                <input type="text" class="form-control" name="first" id="first" placeholder="First Name" required>
               </div>
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Last Name" required>
+                <input type="text" class="form-control" name="last" id="last" placeholder="Last Name" required>
               </div>
               <div class="col-lg-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
               </div>
               
               <div class="col-12">
-                <textarea class="form-control" id="aboutProject" name="about-project" rows="6" placeholder="About the Project"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="About the Project"></textarea>
               </div>
               <div class="col-12">
-                <button formtarget="_blank" type="submit" class="btn btn-primary" id="contact-form-button">
+                <button type="submit" class="g-recaptcha btn btn-primary" data-callback='onSubmit' data-action='submit'
+								data-sitekey="6Lcrex0eAAAAAPU3sq5T2iIt1iST_a83dfP7MMy6">
                   <span class="btn-area">
                     <span data-text="Send Message">
                       Send Message
@@ -123,12 +180,8 @@
                   </span>
                 </button>
               </div>
-              <p id="contact-form-status"></p>
             </div>
           </form>
-          <p class="contact-form-generator">
-            <strong>** </strong><a href="https://fabform.io/" target="_blank">Static website forms</a>
-          </p>
         </div>
       </div>
     </div>
