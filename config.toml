@@ -88,7 +88,7 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "18 Rue de Contern<br>Luxembourg, LU-5339"
+      address = "Luxembourg"
       phone   = "+352 671 013 328"
       email   = "contact@codin.work"
       # Footer Sitemap
